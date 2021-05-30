@@ -12,26 +12,8 @@
 
 ### Steps to execute the above folder
 ```
-cd sqld
+sudo docker build .
 ```
 ```
-sudo docker build -t sqld .
-```
-```
-sudo docker run -d -p 3306:3306 --name custom -e MYSQL_ROOT_PASSWORD=scalereal sqld
-```
-```
-sudo docker start custom
-```
-```
-sudo docker exec -it custom /bin/bash
-```
-```
-mysql -uroot -p;
-```
-```
-SHOW databases;
-```
-```
-USE scalerealInterns;
+sudo docker run -it --name <Container name> <image id> bash
 ```
