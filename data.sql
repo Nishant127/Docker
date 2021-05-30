@@ -23,10 +23,10 @@ DROP TABLE IF EXISTS `internData`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `internData` (
-  `Name` varchar(50) NOT NULL,
-  `Address` varchar(200) NOT NULL,
-  `Mobile` bigint DEFAULT NULL,
-  `PANno` int DEFAULT NULL
+  `Name` varchar(30) NOT NULL,
+  `Address` varchar(50) NOT NULL,
+  `MOBILE_NO` bigint NOT NULL,
+  `PAN_NO` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -36,7 +36,7 @@ CREATE TABLE `internData` (
 
 LOCK TABLES `internData` WRITE;
 /*!40000 ALTER TABLE `internData` DISABLE KEYS */;
-INSERT INTO `internData` VALUES ('Nishant','Panchavati Nasik-422004',9763132276,123456789),('Kunal','Kolhapur',7854963214,1237856789),('Yash','Mumbai',7485963214,1237456789);
+INSERT INTO `internData` VALUES ('Nishant','NASIK',9785641236,'ASDE123456'),('Furious','Nasik',7859641256,'QWER098765');
 /*!40000 ALTER TABLE `internData` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-22 12:22:03
+-- Dump completed on 2021-05-30 13:35:29
